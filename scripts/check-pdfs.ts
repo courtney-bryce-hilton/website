@@ -18,7 +18,7 @@ const missing: string[] = [];
 
 for (const pub of publications) {
   if (!pub.pdf) continue;
-  referenced.add(pub.pdf);
+  referenced.add(pub.pdf.replace(/^\//, ''));
   if (!existsSync(join(publicDir, pub.pdf))) missing.push(`  ${pub.id}: ${pub.pdf}`);
 }
 
@@ -28,7 +28,7 @@ const duplicateIds = ids.filter((id, i) => ids.indexOf(id) !== i);
 const onDisk = existsSync(pdfDir)
   ? readdirSync(pdfDir).filter((f) => f.toLowerCase().endsWith('.pdf'))
   : [];
-const orphans = onDisk.filter((f) => !referenced.has(`/pdfs/${f}`));
+const orphans = onDisk.filter((f) => !referenced.has(`pdfs/${f}`));
 
 if (orphans.length) {
   console.warn(`Unreferenced PDFs in public/pdfs/ (still deployed):\n  ${orphans.join('\n  ')}`);

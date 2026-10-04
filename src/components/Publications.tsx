@@ -10,8 +10,8 @@ const sorted = [...publications].sort((a, b) => b.year - a.year);
 const index = indexPublications(sorted);
 
 // Accept either a bare DOI ("10.1000/xyz") or a full https://doi.org/ URL.
-const doiUrl = (doi: string) =>
-  /^https?:\/\//.test(doi) ? doi : `https://doi.org/${doi}`;
+// const doiUrl = (doi: string) =>
+//   /^https?:\/\//.test(doi) ? doi : `https://doi.org/${doi}`;
 
 export function Publications() {
   const sectionRef = useRef<HTMLElement>(null);
