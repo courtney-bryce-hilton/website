@@ -1,54 +1,34 @@
-# Academic site
+# My personal / academic website
 
-Vite + React + TypeScript. One page, three scroll-snapped sections: bio, publications (searchable), media coverage.
+Made with Vite + React + TypeScript. Currently hosted as `https://courtney-b-hilton.netlify.app/` but I should probably actually just pay for a proper domain.
 
 ## Run locally
 
-Requires Node 22.18 or later (`node --version`); the PDF check script relies on Node's built-in TypeScript type stripping.
+Requires Node 22.18 or later (the PDF check script relies on Node's built-in TypeScript type stripping).
+
+To run locally:
 
 ```bash
 npm install
-npm run dev          # http://localhost:5173, hot-reloads on save
+npm run dev
 ```
 
-Before deploying:
+Test before deploying:
 
 ```bash
 npm run build        # checks PDFs, type-checks, bundles to dist/
 npm run preview      # serves dist/ exactly as it will be deployed
 ```
 
-## Where things live
+### Adding / updating publications
 
-| To change…              | Edit                              |
-| ----------------------- | --------------------------------- |
-| Name, bio, links, photo | `src/data/profile.ts`             |
-| Publications            | `src/data/publications.ts`        |
-| Media coverage          | `src/data/media.ts`               |
-| Colours, type, spacing  | tokens at the top of `src/index.css` |
-| Page title, link previews | `index.html`                    |
-| Photo                   | replace `public/photo.svg` (or add `public/photo.jpg` and update `profile.photo`) |
-| PDFs                    | `public/pdfs/`                    |
+As usual, all the data for this is based on my `cv_data` Google Sheet. NOTE: I shoudl probably better automate / streamline the updating process here at some point.
 
-### Adding a publication
-
-1. Drop the PDF in `public/pdfs/`, e.g. `public/pdfs/smith2026.pdf`.
-2. Add an entry to `src/data/publications.ts`:
-
-```ts
-{
-  id: 'smith2026',
-  citation: 'Smith, J., & Doe, A. (2026). Title. *Journal Name, 12*(3), 45–67.',
-  year: 2026,
-  pdf: '/pdfs/smith2026.pdf',
-  doi: '10.1234/abcd',          // optional
-  keywords: ['DTI', 'lifespan'], // optional: searchable, not shown
-},
-```
-
-Text between `*asterisks*` renders in italics. `npm run build` fails if a `pdf` path doesn't exist or an `id` is duplicated, and warns about PDFs nothing links to.
+1. Update `cv_data` Google Sheet with all relevant fields
+2. Drop PDF in `public/pdfs/`, and make sure this matches the `pdf_file` field in Google Sheets (e.g., `public/pdfs/Hilton2027.pdf`)
+3. Rerun my `prepare_data_for_website.R` script in my `cv` repo.
+4. Manually drag across the updated `publications.json` and `media.json` files as necessary to `src/data/`
 
 ## Notes
 
-- Scroll snapping is `mandatory` by default. If it feels too forceful on a trackpad, set `--snap: y proximity;` in `src/index.css`.
-- Remove the placeholder `public/pdfs/example.pdf` once you've added real papers.
+- Text between `*asterisks*` renders in italics. `npm run build` fails if a `pdf` path doesn't exist or an `id` is duplicated, and warns about PDFs nothing links to.

@@ -4,7 +4,7 @@
   --ink: #1a1a18;
   --ink-body: #3a3a36;
   --ink-muted: #5b5b56;
-  --ink-faint: #71706a; /* ≥4.5:1 on --ground; the mockup's #9b9a92 fails contrast */
+  --ink-faint: #71706a;
   --rule: #ecebe5;
   --rule-strong: #c9c7bf;
   --accent: #86428f;
@@ -204,7 +204,6 @@ a:hover {
   aspect-ratio: 240 / 290;
   object-fit: cover;
   border-radius: 100%;
-  /* border-radius: 20px; */
   background: var(--photo-ground);
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); */
   cursor: pointer;
@@ -277,7 +276,7 @@ a:hover {
 
 .search__count {
   flex: 0 0 auto;
-  min-width: 4em; /* reserve space so typing doesn't shift the input */
+  min-width: 4em; /* reserve space so typing doesn't shift the input! */
   text-align: right;
   font-size: 13px;
   font-variant-numeric: tabular-nums;
@@ -308,7 +307,7 @@ a:hover {
 .list-pinned {
   flex: 1 1 auto;
   min-height: 0;
-  overflow: hidden; /* no scrollbar: page scrolling drives it */
+  overflow: hidden;
   padding-bottom: 24px; /* keeps the last entry clear of the bottom fade */
   /* soft fade at the top and bottom edges hints that there is more to come */
   mask-image: linear-gradient(
@@ -349,8 +348,6 @@ a:hover {
   color: var(--accent);
 }
 
-/* Dash between neighbours. Positioned in the gap (outside the link's box) so the
-   link underline doesn't run through it. */
 .list__actions a {
   position: relative;
 }
@@ -410,7 +407,7 @@ a:hover {
   .bio__photo {
     order: -1; /* photo above the name on phones; DOM order keeps name first for screen readers */
     width: 160px;
-    align-self: center; /* centre the photo in the column */
+    align-self: center;
   }
 
   .bio__links {
