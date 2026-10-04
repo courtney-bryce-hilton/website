@@ -59,7 +59,7 @@ export function Publications() {
                     <div className="list__actions">
                       {pub.pdf && (
                         <a
-                          href={"pdfs/" + pub.pdf}
+                          href={pub.pdf}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
