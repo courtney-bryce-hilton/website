@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data/profile.ts";
-import { ProfileLink } from "./ProfileLink.tsx";
-import { ScrollCue } from "./ScrollCue.tsx";
+import { ProfileLink } from "../components/ProfileLink.tsx";
+import { ScrollCue } from "../components/ScrollCue.tsx";
 
 export function Bio() {
   // Easter egg: click the photo to start it spinning, click again to stop.

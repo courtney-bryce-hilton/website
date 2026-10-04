@@ -1,6 +1,6 @@
-import { Bio } from './components/Bio.tsx';
-import { Media } from './components/Media.tsx';
-import { Publications } from './components/Publications.tsx';
+import { Bio } from "./sections/Bio.tsx";
+import { Media } from "./components/Media.tsx";
+import { Publications } from "./components/Publications.tsx";
 
 export default function App() {
   return (
