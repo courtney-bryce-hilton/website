@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!--
+      These tags live here, not in React, because link-preview scrapers
+      (LinkedIn, Slack, Bluesky) read the raw HTML and never run JavaScript.
+    -->
+    <title>Courtney B. Hilton</title>
+    <meta
+      name="description"
+      content="[One sentence: who you are and what you research.]"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Courtney B. Hilton" />
+    <meta
+      property="og:description"
+      content="[One sentence: who you are and what you research.]"
+    />
+    <!-- Must be an absolute URL once deployed, e.g. https://yourdomain/og.jpg (1200×630). -->
+    <!-- <meta property="og:image" content="https://yourdomain/og.jpg" /> -->
+    <meta name="theme-color" content="#fafaf8" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p
+        style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif"
+      >
+        This site needs JavaScript to display the publication list.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
