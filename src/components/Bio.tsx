@@ -1,23 +1,7 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faBluesky,
-  faGithub,
-  faGoogleScholar,
-} from "@fortawesome/free-brands-svg-icons";
-import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import type { ProfileLinkIcon } from "../types.ts";
 import { profile } from "../data/profile.ts";
+import { ProfileLink } from "./ProfileLink.tsx";
 import { ScrollCue } from "./ScrollCue.tsx";
-
-// "cv" has no icon: it renders as the letters "CV" (Font Awesome has no such icon).
-const ICONS: Record<Exclude<ProfileLinkIcon, "cv">, IconDefinition> = {
-  github: faGithub,
-  bluesky: faBluesky,
-  email: faEnvelope,
-  scholar: faGoogleScholar,
-};
 
 export function Bio() {
   // Easter egg: click the photo to start it spinning, click again to stop.
@@ -48,15 +32,7 @@ export function Bio() {
           <ul className="bio__links">
             {profile.links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} title={link.label} aria-label={link.label}>
-                  {link.icon === "cv" ? (
-                    <span className="bio__cv" aria-hidden="true">
-                      CV
-                    </span>
-                  ) : (
-                    <FontAwesomeIcon icon={ICONS[link.icon]} />
-                  )}
-                </a>
+                <ProfileLink {...link} />
               </li>
             ))}
           </ul>
