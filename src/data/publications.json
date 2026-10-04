@@ -3,7 +3,7 @@
     "id": "Hilton2026",
     "year": 2026,
     "citation": "**Hilton, C. B.**, Liu, J., Mehr, S., Bergelson, E. (2026). [Response to Creel](https://doi.org/10.1016/j.cub.2026.04.007). *Current Biology*.",
-    "pdf": "https://drive.google.com/file/d/1p85Tc9YccSnotNeFzoa4C4ocpRzISLtD/view?usp=sharing",
+    "pdf": "Hilton_etal_2026.pdf",
     "doi": "https://doi.org/10.1016/j.cub.2026.04.007",
     "code": "https://github.com/themusiclab/creel_response",
     "data": "https://github.com/themusiclab/creel_response/blob/main/download_data.R"
@@ -12,7 +12,7 @@
     "id": "Waz2026",
     "year": 2026,
     "citation": "Waz, S., Mednicoff, S., Ho, J., **Hilton, C. B.**, Hickok, G., Mehr, S., Chubb, C. (2026). [A population-level discontinuity in human sensitivity to musical harmony](https://doi.org/10.31234/osf.io/7nzh5_v2). *PsyArXiv*.",
-    "pdf": "http://osf.io/7nzh5_v1/download",
+    "pdf": "Waz_etal_2026.pdf",
     "doi": "https://doi.org/10.31234/osf.io/7nzh5_v2",
     "code": "https://github.com/themusiclab/tone-scrambles",
     "data": "https://github.com/themusiclab/tone-scrambles/tree/main/results"
@@ -21,7 +21,7 @@
     "id": "James2026",
     "year": 2026,
     "citation": "James, L. S., Woolley, S., Sakata, J. T., **Hilton, C. B.**, Ryan, M. J., Mehr S. A. (2026). [Humans share acoustic preferences with other animals](https://doi.org/10.1126/science.aea1202). *Science*.",
-    "pdf": "https://drive.google.com/file/d/1pWBQDCnvSqSZDTdjmZNMK4pRg6K2uBH1/view?usp=sharing",
+    "pdf": "James_etal_2026.pdf",
     "doi": "https://doi.org/10.1126/science.aea1202",
     "code": "https://github.com/themusiclab/animal-sounds",
     "data": "https://github.com/themusiclab/animal-sounds/tree/main/results"
@@ -30,7 +30,7 @@
     "id": "Bertolo2025",
     "year": 2025,
     "citation": "Bertolo, M., Snarskis, M., Yurdum, L., Bainbridge, C., Atwood, S., **Hilton, C. B.**, ... Mehr, S. (2025). [The Expanded Natural History of Song Discography, a global corpus of vocal music](https://doi.org/10.1162/opmi.a.4). *Open Mind*.",
-    "pdf": "https://direct.mit.edu/opmi/article-pdf/doi/10.1162/opmi.a.4/2537511/opmi.a.4.pdf",
+    "pdf": "Bertolo_etal_2025.pdf",
     "doi": "https://doi.org/10.1162/opmi.a.4",
     "code": "https://github.com/themusiclab/nhs-expanded",
     "data": "https://zenodo.org/records/15725182"
@@ -39,7 +39,7 @@
     "id": "Cho2025",
     "year": 2025,
     "citation": "Cho, E., Yurdum, L., Ebinne, E., **Hilton, C. B.**, Lai, E., Bertolo, M., Brown, P., Milosh, B., Sened, H., Tamir, D. I., Mehr, S. A. (2025). [Ecological momentary assessment reveals causal effects of music enrichment on infant mood](https://doi.org/10.1111/cdev.14246). *Child Development*.",
-    "pdf": "https://drive.google.com/file/d/1GeSMbXkTtZiRcmJLX-_0ypLiCDkur3Fd/view?usp=sharing",
+    "pdf": "Cho_etal_2025.pdf",
     "doi": "https://doi.org/10.1111/cdev.14246",
     "code": "https://github.com/themusiclab/musical-babies",
     "data": "https://github.com/themusiclab/musical-babies/tree/main/data"
@@ -48,21 +48,21 @@
     "id": "Janssen2024",
     "year": 2024,
     "citation": "Janssen, A., Goldwater, M., **Hilton, C. B.**, Bonner, C., Shaw, T. (2024). [The role of information visualisation and anecdotal evidence in medical students’ clinical reasoning process: a cross sectional survey study](https://doi.org/10.1177/23821205241293491). *Journal of Medical Education and Curricular Development*.",
-    "pdf": "https://journals.sagepub.com/doi/reader/10.1177/23821205241293491",
+    "pdf": "Janssen_etal_2024.pdf",
     "doi": "https://doi.org/10.1177/23821205241293491"
   },
   {
     "id": "Hilton2024",
     "year": 2024,
     "citation": "**Hilton, C. B.** (2024). [Why music psychology needs larger and more diverse datasets and how citizen science can help](https://doi.org/10.31234/osf.io/zv6w8). In C. Cannone, F. Gribenski (Eds.), *New methods and new challenges in empirical musicology*, Oxford University Press.",
-    "pdf": "https://osf.io/zv6w8/download/",
+    "pdf": "Hilton_2024.pdf",
     "doi": "https://doi.org/10.31234/osf.io/zv6w8"
   },
   {
     "id": "Yurdum2023",
     "year": 2023,
     "citation": "Yurdum, L., Singh, M., Glowacki, L., Vardy, T., Atkinson, Q., **Hilton, C. B.**, … Mehr, S. A. (2023). [Universal interpretations of vocal music](https://doi.org/10.1073/pnas.221859312). *Proceedings of the National Academy of Sciences*.",
-    "pdf": "https://drive.google.com/file/d/1vXHAsnc0RDjfOFxK0wAlkECsX9MIcdWO/view?usp=sharing",
+    "pdf": "Yurdum_etal_2023.pdf",
     "doi": "https://doi.org/10.1073/pnas.221859312",
     "code": "https://github.com/themusiclab/universal-music",
     "data": "https://github.com/themusiclab/universal-music/tree/main/data"
@@ -71,7 +71,7 @@
     "id": "Liu2023",
     "year": 2023,
     "citation": "Liu^, J., **Hilton^, C. B.**, Bergelson, E., & Mehr, S. A. (2023). [Language experience predicts music processing in a half-million speakers of fifty-four languages](https://doi.org/10.1016/j.cub.2023.03.067). *Current Biology*.",
-    "pdf": "https://drive.google.com/file/d/1VJUHD0twuVuFfly3IsKLWL01N44pe-2O/view?usp=sharing",
+    "pdf": "Liu_Hilton_etal_2023.pdf",
     "doi": "https://doi.org/10.1016/j.cub.2023.03.067",
     "code": "https://github.com/themusiclab/language-experience-music",
     "data": "https://doi.org/10.5281/zenodo.7614188"
@@ -80,7 +80,7 @@
     "id": "Hilton2022a",
     "year": 2022,
     "citation": "**Hilton^, C. B.**, Crowley-de Thierry^, L., Yan, R., Martin, A., & Mehr, S. A. (2022). [Children infer the behavioral contexts of unfamiliar foreign songs](https://doi.org/10.1037/xge0001289). *Journal of Experimental Psychology: General*.",
-    "pdf": "https://drive.google.com/file/d/1lcHQgFpYQSMbe-i2RrrlP5Sz_SwEIloi/view?usp=sharing",
+    "pdf": "Hilton_Crowley-de_etal_2022.pdf",
     "doi": "https://doi.org/10.1037/xge0001289",
     "code": "https://github.com/themusiclab/form-function-kids",
     "data": "https://github.com/themusiclab/form-function-kids/tree/main/results"
@@ -89,7 +89,7 @@
     "id": "Hilton2022b",
     "year": 2022,
     "citation": "**Hilton^, C. B.**, Moser^, C. J., Bertolo, M., Lee-Rubin, H., Bainbridge, C. M., Atwood, S., Simson, J., … Mehr, S. A. (2022). [Acoustic regularities in infant-directed speech and song across cultures](https://doi.org/10.1038/s41562-022-01410-x). *Nature Human Behaviour*.",
-    "pdf": "https://rdcu.be/cRUT6",
+    "pdf": "Hilton_Moser_etal_2022.pdf",
     "doi": "https://doi.org/10.1038/s41562-022-01410-x",
     "code": "https://github.com/themusiclab/infant-speech-song",
     "data": "https://doi.org/10.5281/zenodo.5525161"
@@ -98,21 +98,21 @@
     "id": "Hilton2022c",
     "year": 2022,
     "citation": "**Hilton, C. B.**, & Mehr, S. A. (2022). [Citizen science can help to alleviate the generalizability crisis](https://doi.org/10.1017/S0140525X21000352). *Behavioral and Brain Sciences*.",
-    "pdf": "https://drive.google.com/file/d/1FNbpeJwf3ITncbkUhoWHfYWuK-yCdiIP/view?usp=sharing",
+    "pdf": "Hilton_etal_2022.pdf",
     "doi": "https://doi.org/10.1017/S0140525X21000352"
   },
   {
     "id": "Hilton2022d",
     "year": 2022,
     "citation": "**Hilton, C. B.**, Goldwater, M. B., Hancock, D., Clemson, M., Huang, A., & Denyer, G. (2022). [Scalable science education via online cooperative questioning](https://doi.org/10.1187/cbe.19-11-0249). *CBE—Life Sciences Education*.",
-    "pdf": "https://www.lifescied.org/doi/full/10.1187/cbe.19-11-0249#",
+    "pdf": "Hilton_etal_2022b.pdf",
     "doi": "https://doi.org/10.1187/cbe.19-11-0249"
   },
   {
     "id": "Hilton2021a",
     "year": 2021,
     "citation": "**Hilton, C. B.**, & Goldwater, M. (2021). [Linguistic syncopation: Meter-syntax alignment affects sentence comprehension and sensorimotor synchronization](https://doi.org/10.1016/j.cognition.2021.104880). *Cognition*.",
-    "pdf": "https://drive.google.com/file/d/1EX1no5WBBQVcx1dWr3BZ5qgcdTOz4t9B/view?usp=sharing",
+    "pdf": "Hilton_Goldwater_2021.pdf",
     "doi": "https://doi.org/10.1016/j.cognition.2021.104880",
     "code": "https://osf.io/6n8mz",
     "data": "https://osf.io/42msj/"
@@ -121,28 +121,28 @@
     "id": "Goldwater2021",
     "year": 2021,
     "citation": "Goldwater, M. B., **Hilton, C. B.**, Davis, T. (2021). [Developing an educational neuroscience of category learning](https://doi.org/10.1111/mbe.12306). *Mind, Brain, and Education*.",
-    "pdf": "https://drive.google.com/file/d/1Shu7pfobOcWq4m2LzdNk0VWvIDcY4eFy/view?usp=sharing",
+    "pdf": "Goldwater_Hilton_Davis_2021.pdf",
     "doi": "https://doi.org/10.1111/mbe.12306"
   },
   {
     "id": "Hilton2021b",
     "year": 2021,
     "citation": "**Hilton, C. B.**, Asano, R., & Boeckx, C. A. (2021). [Why musical hierarchies?](https://doi.org/10.1017/S0140525X20001338) *Behavioral and Brain Sciences*.",
-    "pdf": "https://drive.google.com/file/d/1C7adVijEBCiLbLTgHgbCeW6wz_fC1sWr/view?usp=sharing",
+    "pdf": "Hilton_etal_2021.pdf",
     "doi": "https://doi.org/10.1017/S0140525X20001338"
   },
   {
     "id": "Hilton2020",
     "year": 2020,
     "citation": "**Hilton, C. B.** (2020). [Syncopating comprehension: Meter-syntax alignment and its effect on sentence processing, neural entrainment, and sensorimotor synchronisation](https://doi.org/https://hdl.handle.net/2123/24230) (Doctoral dissertation, University of Sydney). University of Sydney.",
-    "pdf": "https://ses.library.usyd.edu.au/bitstream/handle/2123/24230/Thesis_revision_clean.pdf?sequence=2&isAllowed=y",
+    "pdf": "Hilton_2020.pdf",
     "doi": "https://hdl.handle.net/2123/24230"
   },
   {
     "id": "Jacobson2020",
     "year": 2020,
     "citation": "Jacobson, M. J., Goldwater, M., Markauskaite, L., Lai, P. K., Kapur, M., Roberts, G., & **Hilton, C. B.** (2020). [Schema abstraction with productive failure and analogical comparison: Learning designs for far across domain transfer](https://doi.org/10.1016/j.learninstruc.2019.101222). *Learning and Instruction*.",
-    "pdf": "https://drive.google.com/file/d/1uiQpa_lj4tknTgdiD0LkCD6CvnGKdomo/view?usp=sharing",
+    "pdf": "Jacobson_etal_2020.pdf",
     "doi": "https://doi.org/10.1016/j.learninstruc.2019.101222",
     "data": "https://osf.io/am7f4/"
   },
@@ -150,7 +150,7 @@
     "id": "Hilton2018",
     "year": 2018,
     "citation": "**Hilton, C. B.**, Calilhanna, A., & Milne, A. J. (2018). [Visualizing and Sonifying Mathematical Music Theory with Software Applications: Implications of Computer-Based Models for Practice and Education](https://doi.org/10.1142/9789813228351_0009). In M. Montiel & F. Gómez (Eds.), *Theoretical and Practical Pedagogy of Mathematical Music Theory* (pp. 201–236). World Scientific.",
-    "pdf": "https://drive.google.com/file/d/1gMA1aPRnGIs5as7qItIaPk9UfGfWUVl6/view?usp=sharing",
+    "pdf": "Hilton_Calilhanna_Milne_2018.pdf",
     "doi": "https://doi.org/10.1142/9789813228351_0009"
   }
 ]
