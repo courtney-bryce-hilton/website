@@ -26,7 +26,8 @@ export function MediaItem({ item }: MediaItemProps) {
       <ExternalLink className="media-link" href={url}>
         <span className="media-link__title">{title}</span>
         <span className="media-link__meta">
-          {outlet}, {formatDate(date)}
+          <span className="media-link__outlet">{outlet}</span>,{" "}
+          {formatDate(date)}
         </span>
       </ExternalLink>
       <span className="list__actions" aria-hidden="true">

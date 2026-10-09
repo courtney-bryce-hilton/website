@@ -436,11 +436,15 @@ main > section[data-landed] .cue {
 }
 
 .media-link__title {
-  color: #26261f;
+  color: var(--accent);
 }
 
 .media-link:hover .media-link__title {
   color: var(--accent-deep);
+}
+
+.media-link__outlet {
+  font-weight: 600;
 }
 
 .media-link__meta {
