@@ -41,9 +41,12 @@ export function usePinnedScroll(
     const progress = () =>
       Math.min(Math.max(-sectionEl.getBoundingClientRect().top, 0), overflow);
 
+    let synced = -1;
+
     const sync = () => {
       frame = 0;
       listEl.scrollTop = progress();
+      synced = listEl.scrollTop;
     };
 
     const measure = () => {
@@ -59,6 +62,7 @@ export function usePinnedScroll(
     // Keyboard focus can scroll the (overflow: hidden) list on its own; move the
     // page by the same amount so the two stay in step.
     const onListScroll = () => {
+      if (listEl.scrollTop === synced) return;
       const diff = listEl.scrollTop - progress();
       if (Math.abs(diff) > 1)
         window.scrollBy({ top: diff, behavior: "instant" });
