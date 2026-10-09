@@ -6,6 +6,8 @@ interface PinnedListProps {
   heading: string;
   /** Changes whenever the list's contents do (e.g. search results). */
   watch?: unknown;
+  /** Rendered above the heading, e.g. cues to earlier sections. */
+  header?: ReactNode;
   /** Rendered between the heading and the list, e.g. a search box. */
   controls?: ReactNode;
   /** Rendered below the list, e.g. a scroll cue. */
@@ -19,6 +21,7 @@ export function PinnedList({
   id,
   heading,
   watch,
+  header,
   controls,
   footer,
   children,
@@ -36,6 +39,7 @@ export function PinnedList({
     >
       <div className="pin__stage">
         <div className="container">
+          {header}
           <h2 id={`${id}-heading`} className="section__heading">
             {heading}
           </h2>

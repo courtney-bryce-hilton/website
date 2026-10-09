@@ -110,7 +110,7 @@ a:hover {
 
 .section--centred {
   align-items: center;
-  padding: 64px 0;
+  padding: 64px 0 112px; /* room for the cues at the bottom */
 }
 
 .container {
@@ -163,7 +163,16 @@ a:hover {
   color: var(--ink-body);
 }
 
+/* Body text and photo side by side, the photo centred on the text. */
+.bio__row {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
 .bio__bodies {
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 20px; /* keeps spacing between paragraphs */
@@ -237,8 +246,51 @@ a:hover {
   align-self: flex-start;
   margin-top: 36px;
   font-size: 13px;
-  color: var(--ink-faint);
+  /* color: var(--ink-faint); */
+  color: var(--accent);
   border-bottom: none;
+}
+
+/* Cues sit at a fixed distance from the bottom (or, with --top, the top) of the
+   section's screen, lined up with the content column. In pinned sections that
+   screen is the sticky stage, so they stay put while the list scrolls. */
+:root {
+  --cue-top: 36px;
+  --cue-bottom: 28px;
+}
+
+main > section {
+  position: relative;
+}
+
+.cues {
+  position: absolute;
+  bottom: var(--cue-bottom);
+  left: calc((100% - min(var(--measure), 100% - 2 * var(--gutter))) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+.cues--top {
+  top: var(--cue-top);
+  bottom: auto;
+}
+
+.cues .cue {
+  margin-top: 0;
+}
+
+/* --cue-opacity fades the cues out as the page leaves a section; they fade back
+   in, after a beat, once the next section has landed (see useCueFade). */
+main > section .cue {
+  opacity: var(--cue-opacity, 1);
+  filter: opacity(0);
+}
+
+main > section[data-landed] .cue {
+  filter: opacity(0.8);
+  transition: filter 1s ease 0.3s;
 }
 
 .cue:hover {
@@ -297,7 +349,7 @@ a:hover {
   height: 100svh;
   display: flex;
   justify-content: center;
-  padding: 120px 0 56px;
+  padding: 80px 0 72px;
 }
 
 .pin__stage .container {
@@ -404,10 +456,16 @@ a:hover {
     gap: 32px;
   }
 
+  /* Flatten the row so the photo can move above the name (order: -1). */
+  .bio__row {
+    display: contents;
+  }
+
   .bio__photo {
     order: -1; /* photo above the name on phones; DOM order keeps name first for screen readers */
     width: 160px;
     align-self: center;
+    margin-bottom: 12px; /* the text column's gap is 20px; this makes it 32px */
   }
 
   .bio__links {
@@ -418,8 +476,17 @@ a:hover {
     padding: 72px 0 56px;
   }
 
+  :root {
+    --cue-top: 28px;
+    --cue-bottom: 14px;
+  }
+
+  .section--centred {
+    padding-bottom: 80px;
+  }
+
   .pin__stage {
-    padding: 72px 0 40px;
+    padding: 72px 0 48px;
   }
 
   .list__item {

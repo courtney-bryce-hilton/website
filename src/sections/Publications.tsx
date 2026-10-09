@@ -29,7 +29,16 @@ export function Publications() {
           status={searching ? `${results.length} of ${sorted.length}` : ""}
         />
       }
-      footer={<ScrollCue target="media" label="Media coverage" />}
+      header={
+        <div className="cues cues--top">
+          <ScrollCue target="about" label="Home" direction="up" />
+        </div>
+      }
+      footer={
+        <div className="cues">
+          <ScrollCue target="media" label="Media Coverage" />
+        </div>
+      }
     >
       {results.length > 0 ? (
         <ul className="list">
