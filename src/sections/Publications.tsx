@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react";
 import { publications } from "../data/publications.ts";
 import { filterIndexed, indexPublications } from "../lib/search.ts";
-import { PinnedList } from "./PinnedList.tsx";
-import { PublicationItem } from "./PublicationItem.tsx";
-import { ScrollCue } from "./ScrollCue.tsx";
-import { SearchBox } from "./SearchBox.tsx";
+import { PinnedList } from "../components/PinnedList.tsx";
+import { PublicationItem } from "../components/PublicationItem.tsx";
+import { ScrollCue } from "../components/ScrollCue.tsx";
+import { SearchBox } from "../components/SearchBox.tsx";
 
 // Data is static, so sort and index once at module load rather than per render.
 const sorted = [...publications].sort((a, b) => b.year - a.year);

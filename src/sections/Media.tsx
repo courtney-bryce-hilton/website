@@ -1,6 +1,6 @@
 import { media } from "../data/media.ts";
-import { MediaItem } from "./MediaItem.tsx";
-import { PinnedList } from "./PinnedList.tsx";
+import { MediaItem } from "../components/MediaItem.tsx";
+import { PinnedList } from "../components/PinnedList.tsx";
 
 const items = [...media].sort((a, b) => b.date.localeCompare(a.date));
 
